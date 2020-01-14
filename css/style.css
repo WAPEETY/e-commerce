@@ -7,6 +7,10 @@
 .pTop{
   padding-top: 1%;
 }
+
+.pBottom{
+  padding-bottom: 2%;
+}
 .noMargin{
   margin: 0;
 }
@@ -48,3 +52,45 @@ h1{
   h3{
     font-size: 3rem !important;
   }
+}
+
+/* label color */
+ .input-field label {
+   color: #000 !important;
+ }
+
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #000 !important;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #000 !important;
+   box-shadow: 0 1px 0 0 #000 !important;
+ }
+
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #000 !important;
+ }
+
+ /* label focus color */
+ .input-field input[type=email]:focus + label {
+   color: #000 !important;
+ }
+
+ /* label underline focus color */
+ .input-field input[type=email]:focus {
+   border-bottom: 1px solid #000 !important;
+   box-shadow: 0 1px 0 0 #000 !important;
+ }
+
+ /* label underline focus color */
+ .materialize-textarea:focus {
+   border-bottom: 1px solid #000 !important;
+   box-shadow: 0 1px 0 0 #000 !important;
+ }
+
+.rounded{
+  border-radius: 40px;
+}

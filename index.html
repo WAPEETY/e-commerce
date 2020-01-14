@@ -30,15 +30,15 @@
        <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
        <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
        <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-         <li><a href="#about" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+         <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
    </div>
  </nav>
 
  <ul class="sidenav" id="mobile-demo">
    <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
-   <li><a href="https://www.itigeopz.edu.it" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
-   <li><a href="device_documentation.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-     <li><a href="#about" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+   <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
+   <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
+     <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
  </ul>
  <!--main image-->
 <div class="pTop row">
@@ -85,6 +85,37 @@
 
  <footer class="page-footer blue">
          <div class="container">
+           <form id="contactForm" class="rounded hoverable black-text white" action="https://formspree.io/mlejbjpa" method="POST">
+        <div class="row">
+          <div class="input-field col s12 m5 offset-m1">
+            <i class="mdi mdi-account-circle prefix"></i>
+            <input id="name" type="text" name="name" required="required" class="validate">
+            <label for="name">Nome</label>
+          </div>
+          <div class="input-field col s12 m5">
+            <i class="mdi mdi-contact-mail prefix"></i>
+            <input id="mail" type="email" name="_replyto" required="required" class="validate">
+            <label for="mail">E-Mail</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m10 offset-m1">
+            <i class="mdi mdi-folder-text prefix"></i>
+            <textarea id="oggetto" name="Subject" data-length="64" required="" class="materialize-textarea"></textarea>
+            <label for="oggetto">Oggetto</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m10 offset-m1">
+            <i class="mdi mdi-text-subject prefix"></i>
+            <textarea id="messaggio" name="message" required="" class="materialize-textarea"></textarea>
+            <label for="messaggio">Messaggio</label>
+          </div>
+        </div>
+        <div class="center row pBottom">
+          <input class="btn red black-text" type="submit" value="Send">
+        </div>
+      </form>
            <div class="row">
              <div class="col l6 s12">
                <h5 class="black-text">I.I.S. Einstein - De Lorenzo</h5>
