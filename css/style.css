@@ -7,3 +7,44 @@
 .pTop{
   padding-top: 1%;
 }
+.noMargin{
+  margin: 0;
+}
+
+.blueColor{
+  background-color: #0099ff;
+}
+
+.centerText{
+  text-align: center;
+}
+
+#Tpath{
+  position: relative;
+  top: 1vh;
+}
+
+h1{
+    font-size: 2.8rem !important;
+  }
+
+  h3{
+    font-size: 1.8rem !important;
+  }
+
+  @media screen and (min-width: 321px){
+    h1{
+      font-size: 3rem !important;
+    }
+    h3{
+      font-size: 2rem !important;
+    }
+}
+
+@media screen and (min-width: 500px){
+  h1{
+    font-size: 5rem !important;
+  }
+  h3{
+    font-size: 3rem !important;
+  }
