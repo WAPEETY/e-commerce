@@ -94,3 +94,6 @@ h1{
 .rounded{
   border-radius: 40px;
 }
+.rotondo{
+  border-radius: 50%;
+}
