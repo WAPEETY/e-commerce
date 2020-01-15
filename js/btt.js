@@ -3,9 +3,9 @@ if ($('#back-to-top').length) {
         backToTop = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
-                $('#back-to-top').removeClass('hidden');
+                $('#back-to-top').removeClass('hide');
             } else {
-                $('#back-to-top').addClass('hidden');
+                $('#back-to-top').addClass('hide');
             }
         };
     backToTop();
