@@ -18,7 +18,8 @@
     <!--Material icons-->
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+     <script src="js/jquery.min.js"></script>
+     <script src="js/scrollto.js"></script>
   </head>
   <body>
     <!--navbar-->
@@ -28,17 +29,17 @@
      <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class=" black-text mdi mdi-menu"></i></a>
      <ul class="right hide-on-med-and-down">
        <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
-       <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
+       <li><a onclick="scroll_to('ourSchool')" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
        <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-         <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+         <li><a onclick="scroll_to('contactDivForm')" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
    </div>
  </nav>
 
  <ul class="sidenav" id="mobile-demo">
    <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
-   <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
+   <li><a onclick="scroll_to('ourSchool')" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
    <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-     <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+     <li><a onclick="scroll_to('contactDivForm')" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
  </ul>
  <!--main image-->
 <div class="pTop row">
@@ -113,7 +114,7 @@
 </div>
 
  <footer class="page-footer blue">
-         <div class="container">
+         <div id="contactDivForm"class="container">
            <form id="contactForm" class="rounded hoverable black-text white" action="https://formspree.io/mlejbjpa" method="POST">
         <div class="row">
           <div class="input-field col s12 m5 offset-m1">
@@ -165,7 +166,6 @@
          </div>
        </footer>
 	 <!--Javascript things-->
-  <script src="js/jquery.min.js"></script>
  	<script src="js/lazyload.js"></script>
  	<script src="js/materialize.min.js"></script>
  	<script src="js/masonry.pkgd.min.js"></script>

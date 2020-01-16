@@ -27,22 +27,58 @@
      <a href="index.html" class="brand-logo Comfortaa center-on-small-only "><img src="img/favicon.png"  height="50" width="50" class="img_nav rotondo " align="center"  ></a>
      <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class=" black-text mdi mdi-menu"></i></a>
      <ul class="right hide-on-med-and-down">
-       <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
-       <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
        <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-         <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+         <li><a onclick="scroll_to('contactDivForm')" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
    </div>
  </nav>
 
  <ul class="sidenav" id="mobile-demo">
-   <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
-   <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
    <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-     <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+     <li><a onclick="scroll_to('contactDivForm')" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
  </ul>
 
- <h1 class="center">Ouch! Lapenna Corp. Should pay me 100.000.00$ to develop this page</h1>
-
+ <!--main section-->
+<div class="row cart-row">
+  <div class="col s12 m7">
+    <div class="row valign-wrapper noMargin">
+      <div class="col s9">
+        <b><h3>Shopping Cart</h3></b>
+      </div>
+      <div class="col s3">
+        <h6 class="right-text">price:</h6>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="row">
+      <!-- TODO: optimize the cart for mobile -->
+            <div class="col s2">
+              <img src="img/favicon.png" width="60%" alt="" class="responsive-img">
+            </div>
+            <div class="col s8">
+              <h4>
+                <span>
+                item name
+              </span>
+            </h4>
+            </div>
+            <div class="right-text col s2">
+              <span>0$</span>
+            </div>
+          </div>
+  </div>
+  <div class="col s12 m3 offset-m2">
+    <div class="card rounded hoverable center">
+      <div class="card-content rounded">
+        <h5>Subtotal: (<span id="itemQty">0</span> item): $<span id="totalPrice">0</span></h5>
+      </div>
+      <div class="divider"></div>
+      <div class="buttonP">
+        <!-- TODO: Insert some breakpoints -->
+        <a class=" red waves-effect waves-light btn"><i class="mdi mdi-cart right"></i>Proceed to checkout</a>
+      </div>
+    </div>
+  </div>
+</div>
 <!--Floating action button-->
 <div id="back-to-top" class="fixed-action-btn">
   <a class="btn-floating btn-large red">
@@ -50,7 +86,9 @@
   </a>
 </div>
 
- <footer class="page-footer blue">
+
+
+ <footer class="page-footer footer blue">
          <div class="container">
            <form id="contactForm" class="rounded hoverable black-text white" action="https://formspree.io/mlejbjpa" method="POST">
         <div class="row">
