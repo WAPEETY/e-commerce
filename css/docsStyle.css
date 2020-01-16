@@ -7,3 +7,7 @@ html, body, .block {
       footer {
         padding-left: 0;
       }
+
+.susPadding{
+  padding-top: 5%;
+}
