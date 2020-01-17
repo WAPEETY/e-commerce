@@ -9,3 +9,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.pushpin').pushpin();
 });
+
+$('.sidenav li').click(() => {
+  $('.sidenav').sidenav('close');
+})

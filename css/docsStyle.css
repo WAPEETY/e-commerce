@@ -11,3 +11,21 @@ html, body, .block {
 .susPadding{
   padding-top: 5%;
 }
+
+#more {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  align-items: center;
+  transform: translate(-50%,0);
+}
+
+.setPos{
+  position: relative;
+  top: -10vh;
+}
+
+.glue{
+  position: relative;
+  top: 2vh;
+}
