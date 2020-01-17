@@ -25,6 +25,11 @@ html, body, .block {
   top: -10vh;
 }
 
+.setPos2{
+  position: relative;
+  top: 5vh;
+}
+
 .glue{
   position: relative;
   top: 2vh;
