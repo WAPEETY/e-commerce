@@ -20,6 +20,8 @@
 <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css">
 <!--Special css-->
 <link rel="stylesheet" href="css/docsStyle.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/scrollto.js"></script>
 
 </head>
 <body alink="yellow">
@@ -28,18 +30,14 @@
    <a href="index.html" class="brand-logo Comfortaa center-on-small-only "><img src="img/favicon.png"  height="50" width="50" class="img_nav rotondo " align="center"  ></a>
    <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class=" black-text mdi mdi-menu"></i></a>
    <ul class="right hide-on-med-and-down">
-     <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
-     <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
-     <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-       <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
- </div>
+     <li><a href="cart.html" class="Comfortaa white-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
+       <li><a onclick="scroll_to('contactDivForm')" class="Comfortaa white-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+   </div>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
- <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
- <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
- <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-   <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+  <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
+    <li><a onclick="scroll_to('contactDivForm')" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
 </ul>
 
 
@@ -68,20 +66,20 @@
       <svg class="glue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#2196F3" fill-opacity="1" d="M0,192L360,288L720,256L1080,224L1440,288L1440,320L1080,320L720,320L360,320L0,320Z"></path>
       </svg>
-      <div class="blue row red-text">
+      <div class="blue row white-text">
         <div data-aos="fade-up" class="col s12 m3">
     <div class="center">
-      <h1><i class="mdi mdi-nodejs tooltipped" data-position="top" data-tooltip="HTML 5"></i></h1>
+      <h1><i class="mdi mdi-nodejs tooltipped" data-position="top" data-tooltip=""></i></h1>
     </div>
   </div>
   <div data-aos="fade-up" class="col s12 m3">
     <div class="center">
-      <h1><i class="mdi mdi-language-c  tooltipped" data-position="top" data-tooltip="CSS 3"></i></h1>
+      <h1><i class="mdi mdi-language-c  tooltipped" data-position="top" data-tooltip=""></i></h1>
     </div>
   </div>
   <div data-aos="fade-up" class="col s12 m3">
     <div class="center">
-      <h1><i class="mdi mdi-arch tooltipped" data-position="top" data-tooltip="JAVASCRIPT"></i></h1>
+      <h1><i class="mdi mdi-arch tooltipped" data-position="top" data-tooltip=""></i></h1>
     </div>
   </div>
   <div data-aos="fade-up" class="col s12 m3">
@@ -90,6 +88,9 @@
     </div>
   </div>
       </div>
+      <svg class="setPos3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#2196F3" fill-opacity="1" d="M0,32L720,64L1440,96L1440,0L720,0L0,0Z"></path>
+    </svg>
     </div>
   </div>
 </div>
@@ -103,15 +104,15 @@
       <svg class="glue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#2196F3" fill-opacity="1" d="M0,192L360,288L720,256L1080,224L1440,288L1440,320L1080,320L720,320L360,320L0,320Z"></path>
       </svg>
-      <div class="blue row red-text">
+      <div class="blue row white-text">
         <div data-aos="fade-up" class="col s12 m6">
     <div class="center">
-      <h1><i class="mdi mdi-raspberry-pi tooltipped" data-position="top" data-tooltip="HTML 5"></i></h1>
+      <h1><i class="mdi mdi-raspberry-pi tooltipped" data-position="top" data-tooltip=""></i></h1>
     </div>
   </div>
   <div data-aos="fade-up" class="col s12 m6">
     <div class="center">
-      <h1><i class="mdi mdi-card-bulleted-outline tooltipped" data-position="top" data-tooltip="CSS 3"></i></h1>
+      <h1><i class="mdi mdi-card-bulleted-outline tooltipped" data-position="top" data-tooltip=""></i></h1>
     </div>
   </div>
     </div>
@@ -125,7 +126,7 @@
 </div>
 
 <footer class="page-footer blue">
-        <div class="container">
+        <div id="contactDivForm" class="container">
           <form id="contactForm" class="rounded hoverable black-text white" action="https://formspree.io/mlejbjpa" method="POST">
        <div class="row">
          <div class="input-field col s12 m5 offset-m1">
@@ -177,7 +178,6 @@
         </div>
       </footer>
   <!--Javascript things-->
- <script src="js/jquery.min.js"></script>
  <script src="js/lazyload.js"></script>
  <script src="js/materialize.min.js"></script>
  <script src="js/masonry.pkgd.min.js"></script>
@@ -190,4 +190,4 @@
 </body>
 </html>
 
-<!-- TODO: Finish the page,, change video, change color at nav icons, nav close effect -->
+<!-- TODO: Change video, change color at nav icons, nav close effect -->
