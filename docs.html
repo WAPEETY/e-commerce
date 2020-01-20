@@ -18,7 +18,10 @@
 <link rel="stylesheet" href="css/style.css">
 <!--Material icons-->
 <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css">
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Special css-->
+<link rel="stylesheet" href="css/docsStyle.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/scrollto.js"></script>
 
 </head>
 <body alink="yellow">
@@ -27,43 +30,95 @@
    <a href="index.html" class="brand-logo Comfortaa center-on-small-only "><img src="img/favicon.png"  height="50" width="50" class="img_nav rotondo " align="center"  ></a>
    <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class=" black-text mdi mdi-menu"></i></a>
    <ul class="right hide-on-med-and-down">
-     <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
-     <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
-     <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-       <li><a href="#contactForm" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
- </div>
+     <li><a href="cart.html" class="Comfortaa white-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
+       <li><a onclick="scroll_to('contactDivForm')" class="Comfortaa white-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+   </div>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
- <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
- <li><a href="#ourSchool" class="Comfortaa black-text hoverable"><i class="right mdi mdi-school"></i>Our school</a></li>
- <li><a href="docs.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-information"></i>Device documentation</a></li>
-<li><a onclick="scroll_to('contactDivForm')" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
+  <li><a href="cart.html" class="Comfortaa black-text hoverable"><i class="right mdi mdi-cart"></i>Cart</a></li>
+    <li><a onclick="scroll_to('contactDivForm')" class="Comfortaa black-text hoverable"><i class="right mdi mdi-comment-account " ></i>Contact us</a></li>
 </ul>
-<h1 align="center"><font color="red"><b>KooReminder</b></font></h1><br>
-<div class="center">
-  <h2 ><a href="https://en.wikipedia.org/wiki/Software"  target="_blank" class="Comfortaa black-text hoverable"><b>Software:</b></a></h2 >
-  <ul type="disc">
-    <li><h4><a href="" class="Comfortaa black-text hoverable">koos</a></h4></li>
-    <li><h4><a href="" class="Comfortaa black-text hoverable">kooreminder</a></h4></li>
-    <li><h4><a href="" class="Comfortaa black-text hoverable">node.js</a></h4></li>
-    </ul>
-    <br>
-    <h2><b><a href="https://en.wikipedia.org/wiki/Computer_hardware"  target="_blank" class="Comfortaa black-text hoverable">Hardware</a> - <a href="https://en.wikipedia.org/wiki/Raspberry_Pi"  target="_blank" class="Comfortaa black-text hoverable">Raspberry pi</a> :</b></h2>
 
-    <ul type="disc">
-      <li><h4><a href="https://en.wikipedia.org/wiki/HDMI"  target="_blank" class="Comfortaa black-text hoverable">1 HDMI Video Output</a></h4></li>
-      <li><h4><a href="https://en.wikipedia.org/wiki/USB#Receptacle_(socket)_identification"   target="_blank" class="Comfortaa black-text hoverable">4 USB ports</a></h4></li>
-      <li><h4><a href=""  target="_blank" class="Comfortaa black-text hoverable">1 Audio Output Jack</a></h4></li>
-      <li><h4><a href="https://en.wikipedia.org/wiki/ARM_architecture"  target="_blank" class="Comfortaa black-text hoverable">ARM64 processor</a></h4></li>
-      <li><h4><a href="http://www.lcdwiki.com/3.5inch_RPi_Display"  target="_blank" class="Comfortaa black-text hoverable">480X320 Display</a></h4></li>
 
-    </ul>
-    <br>
-
+<div id="main" class="z-depth-5 grey darken-4 block">
+  <div class="pTop center white-text">
+    <h1><span data-aos="fade-up" data-aos-duration="2000">KooReminder</span><span data-aos="fade-up" data-aos-duration="3000">.</span><span data-aos="fade-up" data-aos-duration="3000">.</span><span data-aos="fade-up" data-aos-duration="3000">.</span></h1>
+    <h3><span data-aos="fade-up" data-aos-duration="3000">.</span><span data-aos="fade-up" data-aos-duration="3000">.</span><span data-aos="fade-up" data-aos-duration="3000">.</span><span data-aos="fade-up" data-aos-duration="2000">Better Clock Better Time</span></h3>
+  </div>
+  <div class="center  white-text">
+    <video width="10%" autoplay class="" disableremoteplayback="" mqn-lazyimage-video-no-play="" mqn-video-inview-play="" muted="" playsinline="" >
+    <source mqn-lazyimage-src="vid/vid1.mp4" type="video/mp4" data-video-src="vid/vid1.mp4" src="vid/vid1.mp4">
+    </video>
+    <div id="more" class="center">
+      <h4 data-aos="fade-up" class="susPadding" data-aos-duration="1500">Discover more...</h4>
+      <i data-aos="fade-up" data-aos-duration="2000" class="mdi mdi-chevron-down large"></i>
+    </div>
+  </div>
 </div>
 
+<div id="software" class="block z-depth-5">
+  <div class="pTop center">
+    <h1><span data-aos="fade-up" data-aos-duration="2000">Software</span></h1>
+    <h3><span class="red-text" data-aos="fade-up" data-aos-duration="2000">Koo</span><span class="blue-text" data-aos="fade-up" data-aos-duration="2000">OS</span></h3>
+    <h3><span class="blue-text" data-aos="fade-up" data-aos-duration="2000">Koo</span><span class="red-text" data-aos="fade-up" data-aos-duration="2000">Reminder</span></h3>
+    <div class="setPos">
+      <svg class="glue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#2196F3" fill-opacity="1" d="M0,192L360,288L720,256L1080,224L1440,288L1440,320L1080,320L720,320L360,320L0,320Z"></path>
+      </svg>
+      <div class="blue row white-text">
+        <div data-aos="fade-up" class="col s12 m3">
+    <div class="center">
+      <h1><i class="mdi mdi-nodejs tooltipped" data-position="top" data-tooltip=""></i></h1>
+    </div>
+  </div>
+  <div data-aos="fade-up" class="col s12 m3">
+    <div class="center">
+      <h1><i class="mdi mdi-language-c  tooltipped" data-position="top" data-tooltip=""></i></h1>
+    </div>
+  </div>
+  <div data-aos="fade-up" class="col s12 m3">
+    <div class="center">
+      <h1><i class="mdi mdi-arch tooltipped" data-position="top" data-tooltip=""></i></h1>
+    </div>
+  </div>
+  <div data-aos="fade-up" class="col s12 m3">
+    <div class="center">
+      <h1><i class="mdi mdi-material-ui tooltipped" data-position="top" data-tooltip="MATERIAL DESIGN"></i></h1>
+    </div>
+  </div>
+      </div>
+      <svg class="setPos3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#2196F3" fill-opacity="1" d="M0,32L720,64L1440,96L1440,0L720,0L0,0Z"></path>
+    </svg>
+    </div>
+  </div>
+</div>
 
+<div id="hardware" class="block z-depth-5">
+  <div class="pTop center">
+    <h1><span data-aos="fade-up" data-aos-duration="2000">Hardware</span></h1>
+    <h3><span class="red-text" data-aos="fade-up" data-aos-duration="2000">Raspberry</span><span class="blue-text" data-aos="fade-up" data-aos-duration="2000">Pi</span></h3>
+    <h3><span class="blue-text" data-aos="fade-up" data-aos-duration="2000">Plexi</span><span class="red-text" data-aos="fade-up" data-aos-duration="2000">Glass</span></h3>
+    <div class="setPos2">
+      <svg class="glue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#2196F3" fill-opacity="1" d="M0,192L360,288L720,256L1080,224L1440,288L1440,320L1080,320L720,320L360,320L0,320Z"></path>
+      </svg>
+      <div class="blue row white-text">
+        <div data-aos="fade-up" class="col s12 m6">
+    <div class="center">
+      <h1><i class="mdi mdi-raspberry-pi tooltipped" data-position="top" data-tooltip=""></i></h1>
+    </div>
+  </div>
+  <div data-aos="fade-up" class="col s12 m6">
+    <div class="center">
+      <h1><i class="mdi mdi-card-bulleted-outline tooltipped" data-position="top" data-tooltip=""></i></h1>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+<!--Floating action button-->
 <div id="back-to-top" class="fixed-action-btn">
   <a class="btn-floating btn-large red">
     <i class="mdi mdi-chevron-up"></i>
@@ -71,7 +126,7 @@
 </div>
 
 <footer class="page-footer blue">
-        <div class="container">
+        <div id="contactDivForm" class="container">
           <form id="contactForm" class="rounded hoverable black-text white" action="https://formspree.io/mlejbjpa" method="POST">
        <div class="row">
          <div class="input-field col s12 m5 offset-m1">
@@ -123,14 +178,16 @@
         </div>
       </footer>
   <!--Javascript things-->
- <script src="js/jquery.min.js"></script>
  <script src="js/lazyload.js"></script>
  <script src="js/materialize.min.js"></script>
  <script src="js/masonry.pkgd.min.js"></script>
+ <script src="js/pushpin.js"></script>
  <script src="js/aos.js"></script>
- <script>AOS.init({disable: 'mobile'});</script>
+ <script>AOS.init();</script>
  <script src="js/date.js"></script>
  <script src="js/main.js"></script>
  <script src="js/btt.js"></script>
 </body>
 </html>
+
+<!-- TODO: Change video -->
